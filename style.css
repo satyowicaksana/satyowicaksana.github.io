@@ -100,7 +100,7 @@ section {
 
 .bio {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 20px;
     grid-gap: 20px;
 }
@@ -311,4 +311,30 @@ animation-direction: alternate;
     text-align: center;
     height: 200px;
     width: 400px;
+}
+
+.contact {
+    background-color: rgb(207, 221, 233);
+    text-align: center;
+}
+
+.contact-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100px;
+}
+
+.contact-card img {
+    height: 100px;
+    width: 100px;
+}
+
+.contact-card p {
+    padding-top: 20px;
+    text-align: left;
+    grid-column: span 4;
+}
+
+.footer {
+    padding-top: 30px;
 }

@@ -10,15 +10,15 @@
 </head>
 <body>
 
-    <section class="banner">
+    <section id="top-page" class="banner">
             <nav>
                     <!-- nav code here  -->
                     <ul>
-                        <li><a href = "#home">Home</a></li>
-                        <li><a href = "#company">Company</a></li>
-                        <li><a href = "#product">Product</a></li>
-                        <li><a href = "#services">Services</a></li>
-                        <li><a href = "#contact">Contact</a></li>
+                        <li><a href = "#top-page">^</a></li>
+                        <li><a href = "#profile">Profile</a></li>
+                        <li><a href = "#experience">Experience</a></li>
+                        <li><a href = "#project">Project</a></li>
+                        <li><a href = "#interest">Interest</a></li>
                     </ul>
                 </nav>
         <div>
@@ -27,7 +27,7 @@
         </div>
 	</section>
     
-	<section class="profile">
+	<section id="profile" class="profile">
         <div class="content">
             <div class="title">About me.</div><hr class="lightred">
             <div class="bio">
@@ -68,12 +68,12 @@
             </div>
         </div>
     </section>
-    <section class="experience">
+    <section id="experience" class="experience">
         <div class="content">
-            <div class="title">What I did.</div><hr class="grey">
+            <div class="title">What I've done.</div><hr class="grey">
             <div class="card">
-                <img class="card-img-experience" src="img/bio.png">
-                <div class="card-content red">
+                <img class="card-experience-img-top" src="img/bio.png">
+                <div class="card-experience-top grey">
                     <p>
                         <strong>Pusilkom UI</strong><br>
                         (2017 - 2019)<br>
@@ -82,26 +82,26 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-content-projects red">
+                <div class="card-experience grey">
                     <p>
                         <strong>Software Engineering</strong><br>
                         (2017 - 2018)<br>
                         Being a part of the team that<br>developed a web application<br>for Komisi Pemilihan Umum
                     </p>
-                    <img class="card-img-projects" src="img/banner.jpg">
+                    <img class="card-experience-img" src="img/banner.jpg">
                     <p>Language and Tools:</p>
                     <img class="icon" src="img/banner.jpg">
                     <img class="icon" src="img/banner.jpg">
                     <img class="icon" src="img/banner.jpg">
                     <img class="icon" src="img/banner.jpg">
                 </div>
-                <div class="card-content-projects red">
+                <div class="card-experience grey">
                     <p>
                         <strong>Consulting</strong><br>
                         (2018 - 2019)<br>
                         Being a part of the team that<br>created an IT blueprint and roadmap<br>for PT Badak LNG
                     </p> 
-                    <img class="card-img-projects" src="img/banner.jpg">
+                    <img class="card-experience-img" src="img/banner.jpg">
                     <p>Framework and Tools:</p>
                     <img class="icon" src="img/banner.jpg">
                     <img class="icon" src="img/banner.jpg">
@@ -111,10 +111,34 @@
             </div>
         </div>
     </section>
-    <section class="interest">
+    <section id="project" class="project">
+        <div id="fade-images">
+            <img class="bottom" src="img/hacktiv1.jpg" />
+            <img class="top" src="img/hacktiv2.jpg" />
+            <div class="content-project-container">
+                <div class="content-project">
+                    <div class="title">What I'm doing.</div><hr class="grey">
+                        <p>
+                            I'm currently learning in Hacktiv8, a coding bootcamp,
+                            and I enjoy it so far. Let's just hope this works.<br>
+                            Good luck for batch-35,<br>
+                        </p>
+                    <div class="content-project-img">
+                        <img src="img/thanos.gif">
+                        <div id="infinitefox">INFINITE FOX</div>
+                        <img src="img/fox.gif">
+                    </div>
+                        <p>It's time to<br>
+                        <strong class=title>Improve Your Career, Transform Your Life.</strong>
+                        </p>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section id="interest" class="interest">
         <div class="content-interest">
             <div class="title">What I do for fun.</div><hr class="grey">
-            I do some toy photography in my spare time. You can see it on my instragram.<br>
+            I do some toy photography in my spare time.
             Follow @decode_toys if you're interested!
             <div class="img-interests">
                 <img class="img-interest" src="img/banner.jpg">
@@ -127,7 +151,6 @@
                 <img class="img-interest" src="img/banner.jpg">
                 <img class="img-interest" src="img/banner.jpg">
                 <img class="img-interest" src="img/banner.jpg"><br>
-                <img class="img-interest" src="img/banner.jpg">
                 <img class="img-interest" src="img/banner.jpg">
                 <img class="img-interest" src="img/banner.jpg"><br>
                 <a href="#" class="fa fa-instagram"></a>

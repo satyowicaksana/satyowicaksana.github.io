@@ -124,35 +124,43 @@ section {
     width: 170px;
 }
 
-.card-img-experience {
-    height: 170px;
-    width: 375px;
-}
-
 .card-content {
     grid-column: span 9;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.card-content-projects {
+.card-experience-img-top {
+    height: 170px;
+    width: 100%;
+    grid-column: span 5;
+}
+
+.card-experience-top {
+    grid-column: span 5;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #314455;
+}
+
+.card-experience-img {
+    height: 170px;
+    width: 100%;
+}
+
+.card-experience {
     grid-column: span 5;
     margin: 20px;
     border-radius: 5%;
     padding: 10px;
     text-align: center;
-    color: rgb(207, 221, 233);
+    color: #314455;
 }
 
 .content-interest {
     width: 900px;
     margin: auto;
     text-align: center;
-}
-
-.card-img-projects {
-    height: 170px;
-    width: 100%;
 }
 
 .icon{
@@ -183,8 +191,33 @@ section {
 }
 
 .experience {
-    background-color: #644E5B;
-    color: rgb(207, 221, 233);
+    background-color: #9E5A63;
+    color: rgb(243, 226, 226);
+}
+
+.content-project-container {
+    position: absolute;
+    height: 786px;
+    width: 1366px;
+    background-color: rgba(22, 42, 59, 0.8);
+}
+
+.content-project {
+    height: 786px;
+    width: 800px;
+    margin: auto;
+    color: white;
+}
+
+.content-project-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px 0px;
+}
+
+.content-project-img img{
+    height: 200px;
+    width: 200px;
 }
 
 .interest {
@@ -202,7 +235,7 @@ section {
     margin: 0;
     padding: 0;
     transition: filter .5s ease-in-out;
-    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%); /* FF 35+ */
 }
 
@@ -225,4 +258,57 @@ section {
 .fa-instagram {
     background: #9E5A63;
     color: white;
+}
+
+#fade-images {
+    position:relative;
+    height:786px;
+    width:1366px;
+    object-fit: cover;
+}
+
+#fade-images .top {
+    height:786px;
+    width:1366px;
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#fade-images .bottom {
+    height:786px;
+    width:1366px;
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+#fade-images img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 6s;
+animation-direction: alternate;
+}
+
+#infinitefox{
+    font-size: 80px;
+    text-align: center;
+    height: 200px;
+    width: 400px;
 }

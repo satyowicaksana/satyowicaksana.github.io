@@ -18,7 +18,6 @@
 
 html, body {
     margin: 0;
-    background-color: rgb(207, 221, 233);
     height: 100%;
     width: 100%;
     font-family: 'Bree Serif';
@@ -57,10 +56,9 @@ nav ul li a:hover {
 
 .banner {
     background-image: url('img/banner.jpg');
-    height: 100%;
-    width: 100%;
     background-size: 100% 100%;
     display: table;
+    width: inherit;
 }
 
 .banner div {
@@ -83,13 +81,16 @@ nav ul li a:hover {
     padding-bottom: 10px;
 }
 
-hr {
-    border-top: 2px solid #C96567;
-}
-
 section {
     height: 100%;
-    width: 60%;
+}
+
+.profile {
+    background-color: rgb(207, 221, 233);
+}
+
+.content {
+    width: 750px;
     margin: auto;
 }
 
@@ -115,6 +116,7 @@ section {
     grid-template-columns: repeat(10, 1fr);
     color: rgb(207, 221, 233);
     height: 170px;
+    width: 750px;
 }
 
 .card-img {
@@ -122,16 +124,59 @@ section {
     width: 170px;
 }
 
+.card-img-experience {
+    height: 170px;
+    width: 375px;
+}
+
 .card-content {
     grid-column: span 9;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-content-projects {
+    grid-column: span 5;
+    margin: 20px;
+    border-radius: 5%;
+    padding: 10px;
+    text-align: center;
+    color: rgb(207, 221, 233);
+}
+
+.card-img-projects {
+    height: 170px;
+    width: 100%;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+.darkblue {
+    background-color: #314455;
+}
+
+.darkred {
+    background-color: #644E5B;
 }
 
 .red {
     background-color: #9E5A63;
 }
 
-.blue {
-    background-color: #314455;
+.lightred {
+    border-top: 2px solid #C96567;
+    background-color: #C96567;
+}
+
+.grey {
+    border-top: 2px solid rgb(207, 221, 233);
+    background-color: rgb(207, 221, 233);
+}
+
+.experience {
+    background-color: #644E5B;
+    color: rgb(207, 221, 233);
 }

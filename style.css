@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Bree Serif Regular'), local('BreeSerif-Regular'), url(https://fonts.gstatic.com/s/breeserif/v9/4UaHrEJCrhhnVA3DgluA96rp57F2IwM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw72nU6AFw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html, body {
+    margin: 0;
+    background-color: rgb(207, 221, 233);
+    height: 100%;
+    font-family: 'Bree Serif';
+}
+
+nav {
+    background-color: #314455;
+    height: 350px;
+    position: fixed;
+    width: 100px;
+    z-index: 10;
+    right: 3%;
+    top: 15%;
+    text-align: center;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    color: #C96567;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #C96567;
+    color: white;
+}
+
+.banner {
+    background-image: url('img/banner.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: table;
+}
+
+.banner div {
+    height: 100%;
+    background-color: rgb(207, 221, 233, 0.5);
+    font-size: 50px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: #314455;
+}
+.banner div strong {
+    font-size: 80px;
+}
+
+.services {
+    text-align: center;
+    font-size: 50px;
+}
+
+.cards {
+    position: relative;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    height: 100px;
+    width: 50px;
+    padding: 20px;
+}

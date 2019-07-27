@@ -144,6 +144,12 @@ section {
     color: rgb(207, 221, 233);
 }
 
+.content-interest {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
 .card-img-projects {
     height: 170px;
     width: 100%;
@@ -179,4 +185,44 @@ section {
 .experience {
     background-color: #644E5B;
     color: rgb(207, 221, 233);
+}
+
+.interest {
+    background-color: rgb(243, 226, 226);
+    color: #644E5B;
+}
+
+.img-interests {
+    margin-top: 10px;
+}
+
+.img-interest {
+    height: 140px;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%); /* FF 35+ */
+}
+
+.img-interest:hover {
+    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%); /* FF 35+ */
+}
+
+.fa {
+    width: 140px;
+    text-align: center;
+    text-decoration: none;
+    padding: 40px 0px;
+  }
+  
+.fa:hover {
+      opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #9E5A63;
+    color: white;
 }

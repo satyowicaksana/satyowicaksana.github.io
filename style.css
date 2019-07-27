@@ -20,7 +20,9 @@ html, body {
     margin: 0;
     background-color: rgb(207, 221, 233);
     height: 100%;
+    width: 100%;
     font-family: 'Bree Serif';
+    color: #314455;
 }
 
 nav {
@@ -57,7 +59,7 @@ nav ul li a:hover {
     background-image: url('img/banner.jpg');
     height: 100%;
     width: 100%;
-    background-size: cover;
+    background-size: 100% 100%;
     display: table;
 }
 
@@ -74,19 +76,62 @@ nav ul li a:hover {
     font-size: 80px;
 }
 
-.services {
+.title{
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
-.cards {
-    position: relative;
-    justify-content: center;
+hr {
+    border-top: 2px solid #C96567;
+}
+
+section {
+    height: 100%;
+    width: 60%;
+    margin: auto;
+}
+
+.profile strong {
+    font-size: 18px;
+}
+
+.bio {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding: 20px;
+    grid-gap: 20px;
+}
+
+.bio-img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
 
 .card {
-    background-color: white;
-    height: 100px;
-    width: 50px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    color: rgb(207, 221, 233);
+    height: 170px;
+}
+
+.card-img {
+    height: 170px;
+    width: 170px;
+}
+
+.card-content {
+    grid-column: span 9;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.red {
+    background-color: #9E5A63;
+}
+
+.blue {
+    background-color: #314455;
 }

@@ -7,24 +7,13 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw72nU6AFw.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 html, body {
     max-width: 1366px;
     margin: auto;
     font-family: 'Bree Serif';
-    color: #314455;
 }
 
 nav {
-    background-color: #314455;
     height: 420px;
     position: fixed;
     width: 100px;
@@ -32,7 +21,8 @@ nav {
     margin-left: 30px;
     top: 70px;
     text-align: center;
-  }
+    color: white;
+}
 
 ul {
     list-style-type: none;
@@ -44,8 +34,8 @@ nav ul li a {
     display: block;
     height: 70px;
     line-height: 70px;
-    color: #C96567;
     text-decoration: none;
+    color: #C96567;
 }
 
 nav ul li a:hover {
@@ -62,15 +52,11 @@ nav ul li a:hover {
 
 .banner div {
     height: 786px;
-    background-color: rgb(207, 221, 233, 0.5);
-    font-size: 50px;
+    background-color: rgba(173, 204, 233, 0.6);
     text-align: center;
     display: table-cell;
     vertical-align: middle;
     color: #314455;
-}
-.banner div strong {
-    font-size: 80px;
 }
 
 .title{
@@ -85,17 +71,10 @@ section {
     width: 1366px;
 }
 
-.profile {
-    background-color: rgb(207, 221, 233);
-}
-
-.content {
+.content-profile {
+    height: 786px;
     width: 750px;
     margin: auto;
-}
-
-.profile strong {
-    font-size: 18px;
 }
 
 .bio {
@@ -105,13 +84,17 @@ section {
     grid-gap: 20px;
 }
 
-.bio-img {
+.bio img {
     border-radius: 50%;
     height: 200px;
     width: 200px;
 }
 
-.card {
+.profile strong {
+    font-size: 18px;
+}
+
+.card-profile {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     color: rgb(207, 221, 233);
@@ -119,28 +102,40 @@ section {
     width: 750px;
 }
 
-.card-img {
+.card-profile-img {
     height: 170px;
     width: 170px;
 }
 
-.card-img img {
+.card-profile-img img {
     height: 130px;
     width: 130px;
     margin-left: 20px;
     margin-top: 20px;
 }
 
-.card-content {
+.card-profile-content {
     grid-column: span 9;
     padding-left: 10px;
     padding-right: 10px;
 }
 
+.content-experience {
+    height: 786px;
+    width: 750px;
+    margin: auto;
+}
+
+.card-experience-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 170px;
+    width: 750px;
+}
+
 .card-experience-img-top {
     height: 170px;
     width: 375px;
-    grid-column: span 5;
 }
 
 .card-experience-img-top img {
@@ -150,11 +145,18 @@ section {
     margin-left: 90px;
 }
 
-.card-experience-top {
-    grid-column: span 5;
+.card-experience-content-top {
     padding-left: 10px;
     padding-right: 10px;
-    color: #314455;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.card-experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 480px;
+    width: 750px;
 }
 
 .card-experience-img {
@@ -162,52 +164,19 @@ section {
     width: 100%;
 }
 
-.card-experience {
-    grid-column: span 5;
+.card-experience-content {
     margin: 20px;
     border-radius: 5%;
     padding: 10px;
     text-align: center;
-    color: #314455;
 }
 
-.content-interest {
-    width: 900px;
-    margin: auto;
-    text-align: center;
-}
-
-.icon{
+.icon {
     height: 50px;
     width: 50px;
 }
 
-.darkblue {
-    background-color: #314455;
-}
 
-.darkred {
-    background-color: #644E5B;
-}
-
-.red {
-    background-color: #9E5A63;
-}
-
-.lightred {
-    border-top: 2px solid #C96567;
-    background-color: #C96567;
-}
-
-.grey {
-    border-top: 2px solid rgb(207, 221, 233);
-    background-color: rgb(207, 221, 233);
-}
-
-.experience {
-    background-color: #9E5A63;
-    color: rgb(243, 226, 226);
-}
 
 .content-project-container {
     position: absolute;
@@ -234,9 +203,10 @@ section {
     width: 200px;
 }
 
-.interest {
-    background-color: rgb(243, 226, 226);
-    color: #644E5B;
+.content-interest {
+    width: 900px;
+    margin: auto;
+    text-align: center;
 }
 
 .img-interests {
@@ -272,6 +242,34 @@ section {
 .fa-instagram {
     background: #9E5A63;
     color: white;
+}
+
+.content-contact {
+    height: 786px;
+    width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.card-contact {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100px;
+}
+
+.card-contact img {
+    height: 100px;
+    width: 100px;
+}
+
+.card-contact p {
+    padding-top: 20px;
+    text-align: left;
+    grid-column: span 4;
+}
+
+.footer {
+    padding-top: 30px;
 }
 
 #fade-images {
@@ -320,35 +318,22 @@ animation-duration: 6s;
 animation-direction: alternate;
 }
 
-#infinitefox{
-    font-size: 80px;
-    text-align: center;
-    height: 200px;
-    width: 400px;
+.darkblue-bg {
+    background-color: #314455;
+    color: rgb(207, 221, 233);
 }
 
-.contact {
+.red-bg {
+    background-color: #9E5A63;
+    color: rgb(243, 226, 226);
+}
+
+.softred-bg {
+    background-color: rgb(243, 226, 226);
+    color: #644E5B;
+}
+
+.softblue-bg {
     background-color: rgb(207, 221, 233);
-    text-align: center;
-}
-
-.contact-card {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    height: 100px;
-}
-
-.contact-card img {
-    height: 100px;
-    width: 100px;
-}
-
-.contact-card p {
-    padding-top: 20px;
-    text-align: left;
-    grid-column: span 4;
-}
-
-.footer {
-    padding-top: 30px;
+    color: #314455;
 }

@@ -258,8 +258,10 @@ section {
 }
 
 .card-contact img {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
+    margin-top: 25px;
+    margin-left: 70px;
 }
 
 .card-contact p {

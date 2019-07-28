@@ -25,7 +25,7 @@ html, body {
 
 nav {
     background-color: #314455;
-    height: 350px;
+    height: 420px;
     position: fixed;
     width: 100px;
     z-index: 10;
@@ -54,7 +54,7 @@ nav ul li a:hover {
 }
 
 .banner {
-    background-image: url('img/banner.jpg');
+    background-image: url('img/banner.png');
     background-size: 100% 100%;
     display: table;
     width: 1366px;
@@ -124,6 +124,13 @@ section {
     width: 170px;
 }
 
+.card-img img {
+    height: 130px;
+    width: 130px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
 .card-content {
     grid-column: span 9;
     padding-left: 10px;
@@ -132,8 +139,15 @@ section {
 
 .card-experience-img-top {
     height: 170px;
-    width: 100%;
+    width: 375px;
     grid-column: span 5;
+}
+
+.card-experience-img-top img {
+    height: 130px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 90px;
 }
 
 .card-experience-top {
